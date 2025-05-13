@@ -1,4 +1,3 @@
-using Unity.Properties;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,17 +13,22 @@ namespace IA
         [Header("Car Panel")]
         [SerializeField] internal GameObject carPanel;
         [SerializeField] private GameObject car;
-        [SerializeField] private Button carPanelCloseButton;
+
+        [SerializeField] private GameObject infoPanel;
+        [SerializeField] private Button infoPanelButton;
+
         private void OnEnable()
         {
             carButton.onClick.AddListener(OnCarButton);
             planeButton.onClick.AddListener(OnplaneButton);
+            infoPanelButton.onClick.AddListener(OnInfoPanelButton);
         }
 
         private void OnDisable()
         {
             carButton.onClick.RemoveListener(OnCarButton);
             planeButton.onClick.RemoveListener(OnplaneButton);
+            infoPanelButton.onClick.RemoveListener(OnInfoPanelButton);
         }
 
         #region SelectionPanel Methods
@@ -43,6 +47,14 @@ namespace IA
             Debug.Log("Plane Panel Active");
         }
 
+        #endregion
+
+        #region Info Panel Methods
+        private void OnInfoPanelButton()
+        {
+            bool isActive = infoPanel.activeSelf;
+            infoPanel.SetActive(!isActive);
+        }
         #endregion
 
     }
