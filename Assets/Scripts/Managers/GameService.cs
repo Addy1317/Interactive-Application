@@ -7,7 +7,10 @@ namespace IA
     public class GameService : GenericMonoSingleton<GameService>
     {
         [Header("Service")]
+        [SerializeField] internal GameManager gameManager;
         [SerializeField] internal UIManager uiManager;
+        [SerializeField] internal AudioManager audioManager;
+        [SerializeField] internal EventManager eventManager;
 
         protected override void Awake()
         {
@@ -28,7 +31,10 @@ namespace IA
         {
             var services = new Dictionary<string, Object>
             {
+            { "GameManager", gameManager },
             { "UIManager", uiManager },
+            { "AudioManager", audioManager },
+            { "EventManager", eventManager }
             };
 
             foreach (var service in services)

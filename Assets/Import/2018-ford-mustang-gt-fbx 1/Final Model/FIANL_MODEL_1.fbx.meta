@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: 04a593eabbef8da4f95adc54404b8b50
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018BadgeA_Material
+    second: {fileID: 2100000, guid: 854dde147882ea941ad0950418748e06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Base_Material
+    second: {fileID: 2100000, guid: 1fad99f6061542847a88f6c23257d8b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Coloured_Material
+    second: {fileID: 2100000, guid: 3b75bfe89d6adf34c8837378acbab892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018EngineA_Material
+    second: {fileID: 2100000, guid: db65665d781be204d89351553998c5cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Grille1A_Material
+    second: {fileID: 2100000, guid: bd4e273c95645bd4987171718da7faf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Grille2A_Material
+    second: {fileID: 2100000, guid: e530045e019b6f74ba4aa3a9124c6f1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Grille7A_Material
+    second: {fileID: 2100000, guid: 731530aa352733645a8e92ca08d9715f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Grille8A_Material
+    second: {fileID: 2100000, guid: 0f4ba15fb98b6e04bb7100e86f67d4e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Grille9A_Material
+    second: {fileID: 2100000, guid: 25e315449c811db4099a9729c166a188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018InteriorA_Material
+    second: {fileID: 2100000, guid: 0adaa52c762dbaf4daa03d2a5459fdd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018InteriorTillingColourZoneA_Material
+    second: {fileID: 2100000, guid: 1dff6a87525cc984bb5b5711441a6c15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018LightA_Material
+    second: {fileID: 2100000, guid: 120a5bc25d2d06c498f6f3f3464e2024, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018ManufacturerPlateA_Material
+    second: {fileID: 2100000, guid: b52c0f3f413940241b9838ad90b92e2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018PaintTNR_Material
+    second: {fileID: 2100000, guid: 7dfaafa2a9677ad47940a3e1f80bf341, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018SeatBelt_Material
+    second: {fileID: 2100000, guid: dc0f373fada509741bedeeb1bf6a658d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018TexturedA_Material
+    second: {fileID: 2100000, guid: 71bed497a31a82d42b4a232d7ad1c19a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR0_2018Window_Material
+    second: {fileID: 2100000, guid: 24bdefc5a00e6fa49bbf89a559022dbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangMach1_2021_CallipersCalliperGloss_Material2
+    second: {fileID: 2100000, guid: 59d3fb44f0fe02d46b71bb42cf52b311, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangMach1_2021_Wheel1A_3D_3DWheel2A_Material1
+    second: {fileID: 2100000, guid: 69bc20608c1bb78499466a24784e6a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RED_GLASS
+    second: {fileID: 2100000, guid: 951044066546f3e408a105bd1a62116e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RIM
+    second: {fileID: 2100000, guid: 7a974e0e00bcccd4bb20158fecc0d426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RIM_B
+    second: {fileID: 2100000, guid: 6fc0e15ce011c284ba1a72243713b88c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Car_Ford_MustangGTConvertible_2019_RimBadge_D
+    second: {fileID: 2800000, guid: 8e2863109b76cf14592e6a2e3f2558d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Car_Ford_MustangGTConvertible_2019_RimBadge_N
+    second: {fileID: 2800000, guid: cfe2c7e8a822549408bf107e96ed0d67, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Car_Ford_MustangGTConvertible_2019_Rim_N
+    second: {fileID: 2800000, guid: fd1ebcf07ac35bf4abd06afa56d1ce61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_BadgeA_DiffuseAOSO
+    second: {fileID: 2800000, guid: a1b35fc57584a8b428cfadae66657bb3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_BadgeA_Normal
+    second: {fileID: 2800000, guid: 0a7568638d8fe6740abce95a0e93d6c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_EngineA_DiffuseAOSO
+    second: {fileID: 2800000, guid: 0e68acbf8d4a5044f9e9723e1dbb6177, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_EngineA_Normal
+    second: {fileID: 2800000, guid: 8b70f8213e11d1a48933e485364faaca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille2A_DiffuseAOSO
+    second: {fileID: 2800000, guid: cf8a534827fadd249bef3c8da22dd03c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille2A_Normal
+    second: {fileID: 2800000, guid: 4bc3d1c6514915041a7acba2da47f8ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille7A_DiffuseAOSO
+    second: {fileID: 2800000, guid: b8438a9853c88044faf4804bf35bcf0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille7A_Normal
+    second: {fileID: 2800000, guid: 6f4d25e2c48596540b3c9d81699ed5cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille8A_DiffuseAOSO
+    second: {fileID: 2800000, guid: 45354c66af4312f499b163cc27606edc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille8A_Normal
+    second: {fileID: 2800000, guid: 62794216b0a6e794fba4b78a8460ccdb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille9A_DiffuseAOSO
+    second: {fileID: 2800000, guid: fee79a67b2f3fb74fb39300a55df6a85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Grille9A_Normal
+    second: {fileID: 2800000, guid: 962a70b05f15ade43b818d4ed11abcc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Hood3a_Grille1_DiffuseAOSO
+    second: {fileID: 2800000, guid: 3620684bbb608154fa27676ad8448c44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_Hood3a_Grille1_Normal
+    second: {fileID: 2800000, guid: d85cc2c8d83ba3c45a213ce287ac25ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_InteriorA_DiffuseAOSO
+    second: {fileID: 2800000, guid: 52525ca48f55b89498b129fc4f4216fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_InteriorA_Normal
+    second: {fileID: 2800000, guid: 9205fd39edcce5e439f4e98a0f469c12, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_InteriorTillingColourZoneA_Normal
+    second: {fileID: 2800000, guid: 8c52d99c755ee7047bf061011b32c6c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_LightA_Diffuse
+    second: {fileID: 2800000, guid: 69ebe787399191e49bcea352ae69ad75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_ManufacturerPlateA_Diffuse
+    second: {fileID: 2800000, guid: e6882181c44a8e84bab9736cdbf79b91, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangGTFastbackTNR_2018_TexturedA_Diffuse
+    second: {fileID: 2800000, guid: c09e09246ac71e5428f3932aae55c047, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangMach1_2021_Wheel2A_DiffuseAOSO
+    second: {fileID: 2800000, guid: b280430386fd3dc4bb8e0e262cb1ea51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ford_MustangMach1_2021_Wheel2A_Normal
+    second: {fileID: 2800000, guid: 5aa5f11d3eead3f44ac94bb89c34b2eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Global_Texture_Coloured_Diffuse
+    second: {fileID: 2800000, guid: f06da5eac6803984982a3fa925254f15, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

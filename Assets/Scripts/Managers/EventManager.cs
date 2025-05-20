@@ -4,16 +4,16 @@ namespace IA
 {
     public class EventManager : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
+        public EventController OnCarModelEvent { get; private set; }
+        public EventController OnPlaneModelEvent { get; private set; }
 
-        // Update is called once per frame
-        void Update()
+        public EventsController<ModelType> OnModelSelectedEvent { get; private set; }
+
+        public EventManager()
         {
-        
+            OnCarModelEvent = new EventController();
+            OnPlaneModelEvent = new EventController();
+            OnModelSelectedEvent = new EventsController<ModelType>();
         }
     }
 }
