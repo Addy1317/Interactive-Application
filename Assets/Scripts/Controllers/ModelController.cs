@@ -1,7 +1,8 @@
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 namespace IA
 {
@@ -24,6 +25,9 @@ namespace IA
         [SerializeField] private Color highlightColor = Color.yellow;
         [SerializeField] private Color selectionColor = Color.green;
 
+        [SerializeField] private GraphicRaycaster uiRaycaster;
+        [SerializeField] private EventSystem eventSystem;
+
         private GameObject currentlyHovered;
         private GameObject currentlySelected;
 
@@ -31,21 +35,15 @@ namespace IA
 
         private void OnEnable()
         {
-            //panelCloseButton.onClick.AddListener(CloseModelPanel);
             GeneratePartButtons();
             HideAllParts();
-        }
-
-        private void OnDisable()
-        {
-            //panelCloseButton.onClick.RemoveListener(CloseModelPanel);
         }
 
         private void Update()
         {
             HandleHover();
-            HandleClickOnPart();
-            HandleClickZoom();
+            HandleLeftClickOnPart();
+            HandleRightClickOnPart();
         }
 
         #endregion
@@ -107,39 +105,47 @@ namespace IA
 
         #region Input Handlers
 
-        private void HandleClickOnPart()
+        private void HandleLeftClickOnPart()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit))
-                {
-                    GameObject clickedObject = hit.collider.gameObject;
+            if (!Input.GetMouseButtonDown(0)) return;
 
-                    if (System.Array.Exists(modelParts, part => part == clickedObject))
-                    {
-                        TogglePartVisibility(clickedObject);
-                        SelectPart(clickedObject);
-                        UpdateSelectedText(clickedObject.name);
-                    }
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                GameObject clickedObject = hit.collider.gameObject;
+
+                if (!System.Array.Exists(modelParts, part => part == clickedObject)) return;
+
+                bool newState = !clickedObject.activeSelf;
+                clickedObject.SetActive(newState);
+
+                if (newState)
+                {
+                    SelectPart(clickedObject);
+                    UpdateSelectedText(clickedObject.name);
+                }
+                else
+                {
+                    ClearSelectedPart(clickedObject);
+                    UpdateSelectedText("None");
                 }
             }
         }
 
-        private void HandleClickZoom()
+        private void HandleRightClickOnPart()
         {
-            if (Input.GetMouseButtonDown(1))
+            if (!Input.GetMouseButtonDown(1)) return;
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit))
-                {
-                    GameObject clickedObject = hit.collider.gameObject;
-                    if (System.Array.Exists(modelParts, part => part == clickedObject))
-                    {
-                        SelectPart(clickedObject);
-                        FocusZoomOnPart(clickedObject.transform);
-                    }
-                }
+                GameObject clickedObject = hit.collider.gameObject;
+
+                if (!System.Array.Exists(modelParts, part => part == clickedObject)) return;
+                if (!clickedObject.activeSelf) return;
+
+                SelectPart(clickedObject);
+                FocusZoomOnPart(clickedObject.transform);
             }
         }
 
@@ -181,21 +187,34 @@ namespace IA
         {
             if (currentlyHovered != null && currentlyHovered != currentlySelected)
             {
-                Outline outline = currentlyHovered.GetComponent<Outline>();
-                if (outline != null)
-                    outline.enabled = false;
+                if (currentlyHovered.activeInHierarchy)
+                {
+                    Outline outline = currentlyHovered.GetComponent<Outline>();
+                    if (outline != null)
+                        outline.enabled = false;
+                }
             }
 
             currentlyHovered = null;
         }
 
+        private void ClearSelectedPart(GameObject part)
+        {
+            if (currentlySelected != part) return;
+
+            Outline outline = part.GetComponent<Outline>();
+            if (outline != null)
+                outline.enabled = false;
+
+            currentlySelected = null;
+        }
+
         private void SelectPart(GameObject part)
         {
-            if (currentlySelected != null)
+            if (currentlySelected != null && currentlySelected != part)
             {
                 Outline prevOutline = currentlySelected.GetComponent<Outline>();
-                if (prevOutline != null)
-                    prevOutline.enabled = false;
+                if (prevOutline != null) prevOutline.enabled = false;
             }
 
             Outline newOutline = part.GetComponent<Outline>();
@@ -214,21 +233,25 @@ namespace IA
             if (cameraController == null) return;
 
             cameraController.FocusOnPart(part);
+
+            // Zoom in slightly
             cameraController.distance -= cameraController.zoomStep;
             cameraController.distance = Mathf.Clamp(cameraController.distance, cameraController.minZoom, cameraController.maxZoom);
         }
 
         #endregion
 
-        #region UI Close Handler
-
-        private void CloseModelPanel()
+        private bool IsPointerOverUIElement()
         {
-            this.gameObject.SetActive(false);
-            GameService.Instance.uiManager.modelPanel.SetActive(false);
-            GameService.Instance.uiManager.modeselectionPanel.SetActive(true);
-        }
+            PointerEventData eventData = new PointerEventData(eventSystem)
+            {
+                position = Input.mousePosition
+            };
 
-        #endregion
+            List<RaycastResult> results = new List<RaycastResult>();
+            uiRaycaster.Raycast(eventData, results);
+
+            return results.Count > 0;
+        }
     }
 }

@@ -5,12 +5,12 @@ namespace IA
     public class CameraController : MonoBehaviour
     {
         [Header("Transform Reference")]
-        [SerializeField] private Transform targetObject;                  
+        [SerializeField] private Transform targetObject;
         [SerializeField] private Transform cameraTransform;
 
         [Header("Zoom Settings")]
         [SerializeField] internal float distance = 5f;
-        [SerializeField] internal float zoomSpeed = 10f;             
+        [SerializeField] internal float zoomSpeed = 10f;
         [SerializeField] internal float minZoom = 2f;
         [SerializeField] internal float maxZoom = 20f;
         [SerializeField] internal float zoomStep = 2f;
@@ -66,13 +66,13 @@ namespace IA
 
         private void HandlePan()
         {
-            if (Input.GetMouseButton(2)) 
+            if (Input.GetMouseButton(2))
             {
                 Vector3 delta = Input.mousePosition - lastMousePosition;
                 Vector3 move = -transform.right * delta.x * panSpeed * Time.deltaTime
                              - transform.up * delta.y * panSpeed * Time.deltaTime;
 
-                transform.position += move; 
+                transform.position += move;
             }
 
             lastMousePosition = Input.mousePosition;

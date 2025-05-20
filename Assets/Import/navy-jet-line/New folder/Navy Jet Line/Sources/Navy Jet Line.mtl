@@ -1,0 +1,13 @@
+# Blender MTL File: 'Navy Jet Line.blend'
+# Material Count: 1
+
+newmtl White
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\THISAL PASINDU\\Pictures\\f-14-tomcat-top-gun-gear-down-downloadable\\source\\F-14 Gear Down\\texture_0024.png
